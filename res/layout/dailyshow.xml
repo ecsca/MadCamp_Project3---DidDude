@@ -1,0 +1,92 @@
+<?xml version = "1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#bce8ed" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/teduri" >
+
+        <Button
+            android:id="@+id/selectDay"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="7월15일"
+            android:background="#00000000" />
+        
+        <Button 
+            android:id="@+id/showcompmode"
+            android:background="@drawable/compare"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="7dp"
+		/>
+        <Button 
+            android:id="@+id/editplanmode"
+            android:background="@drawable/planedit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="7dp"
+		/>
+
+        <Button
+            android:id="@+id/editmode2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit"
+            android:layout_gravity="center"
+            android:layout_marginRight="7dp"
+            />
+
+        
+        <Button
+            android:id="@+id/goCalendar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/calendar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@drawable/teduri"
+        android:orientation="horizontal" >
+        
+                    <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="뭐 했더라.."
+                android:textSize="20dp"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/hourList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false">
+        </ListView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

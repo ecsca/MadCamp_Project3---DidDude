@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hourCell"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:id="@+id/tiemCell"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent" >
+        <TextView
+            android:id="@+id/hourCellTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mapCell"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="3" >
+        <ImageView
+            android:id="@+id/hourCellLoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/contentCell"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="8" 
+        android:orientation="vertical">
+                <TextView
+            android:id="@+id/hourCellPlanTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:textStyle="bold"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/hourCellPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

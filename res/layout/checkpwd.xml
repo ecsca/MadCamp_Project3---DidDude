@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#bce8ed"
+    >
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/title2"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Password"
+        android:textSize="30dp"
+        android:textColor="#858585"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/getpwd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/checkpwd"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:background="@drawable/login"
+        android:layout_gravity="center" />
+
+</LinearLayout>
